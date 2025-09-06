@@ -73,16 +73,9 @@ h2 {
 
 /* Slang Section */
 .term {
-    display: flex;
-    align-items: center;
-    gap: 200px;
-}
-#slang .text {
-    width: 500px;
-}
-.term .media {
-    max-width: 100%;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 #slang {
     text-align: left;
@@ -142,10 +135,9 @@ h2 {
 
 /* Abbreviations Section */
 #abbreviations .abbreviation-grid {
-    display: flex;
-    overflow-x: auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding-bottom: 20px;
 }
 #abbreviations .abbreviation {
     background: #DA70D6;
@@ -160,11 +152,7 @@ h2 {
 }
 
 /* Songs */
-.songs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* Footer */
 footer {
@@ -183,4 +171,8 @@ footer .social-media a {
 }
 footer .social-media a:hover {
     text-decoration: underline;
+}
+.img1{
+    height: 200px;
+    border-radius: 15%;
 }
