@@ -9,8 +9,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    padding: 20px;
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,67 +17,38 @@ header {
     top: 0;
     z-index: 1000;
 }
-
-header .logo h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header ul li {
-    margin: 0 20px;
-}
-
-header ul li a {
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-header ul li a:hover {
-    text-decoration: underline;
-}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
 
 /* Main Hero Section */
 #hero {
-    background: linear-gradient(145deg, #ff0080, #ff8c00);
-    padding: 100px 0;
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
     text-align: center;
-    color: white;
     background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 5s  infinite;
 }
 
 @keyframes gradient {
     0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
 }
-
-#hero h2 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.cta-button {
-    background-color: #ff7e5f;
+.st-button {
+    background-color: #7F00FF;
     padding: 15px 30px;
     font-size: 1.2rem;
     color: #fff;
-    border: none;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
 }
 
-.cta-button:hover {
-    background-color: #feb47b;
+.st-button:hover {
+    background-color: #BF40BF;
     cursor: pointer;
 }
 
@@ -93,16 +63,33 @@ h2 {
     margin-bottom: 40px;
 }
 
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
 /* Emojis Section */
 .emoji-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    margin: 0 auto;
 }
 
 .emoji {
-    background-color: #ff7e5f;
+    background-color: #673147;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -112,7 +99,47 @@ h2 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
+.media{
+    width: 259px;
+}
 
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
 /* Abbreviations Section */
 #abbreviations .abbreviation-grid {
     display: flex;
@@ -122,17 +149,15 @@ h2 {
 }
 
 #abbreviations .abbreviation {
-    background: #feb47b;
+    background: #DA70D6;
     border-radius: 10px;
     padding: 20px;
     width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align:center;
 }
 
 .abbreviation h3 {
     font-size: 1.5rem;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -142,6 +167,7 @@ h2 {
   align-items: center;
   justify-content: center
 }
+
 
 /* Footer */
 footer {
@@ -156,7 +182,7 @@ footer .footer-content p {
 }
 
 footer .social-media a {
-    color: #feb47b;
+    color: #5D3FD3;
     margin: 0 15px;
     text-decoration: none;
 }
@@ -165,3 +191,972 @@ footer .social-media a:hover {
     text-decoration: underline;
 }
 
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
+
+/* Main Hero Section */
+#hero {
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: gradient 5s  infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+.st-button {
+    background-color: #7F00FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.st-button:hover {
+    background-color: #BF40BF;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
+/* Emojis Section */
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.emoji {
+    background-color: #673147;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.media{
+    width: 259px;
+}
+
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
+/* Abbreviations Section */
+#abbreviations .abbreviation-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#abbreviations .abbreviation {
+    background: #DA70D6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align:center;
+}
+
+.abbreviation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Songs */
+  .songs {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #5D3FD3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
+
+/* Main Hero Section */
+#hero {
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: gradient 5s  infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+.st-button {
+    background-color: #7F00FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.st-button:hover {
+    background-color: #BF40BF;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
+/* Emojis Section */
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.emoji {
+    background-color: #673147;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.media{
+    width: 259px;
+}
+
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
+/* Abbreviations Section */
+#abbreviations .abbreviation-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#abbreviations .abbreviation {
+    background: #DA70D6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align:center;
+}
+
+.abbreviation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Songs */
+  .songs {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #5D3FD3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
+
+/* Main Hero Section */
+#hero {
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: gradient 5s  infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+.st-button {
+    background-color: #7F00FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.st-button:hover {
+    background-color: #BF40BF;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
+/* Emojis Section */
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.emoji {
+    background-color: #673147;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.media{
+    width: 259px;
+}
+
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
+/* Abbreviations Section */
+#abbreviations .abbreviation-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#abbreviations .abbreviation {
+    background: #DA70D6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align:center;
+}
+
+.abbreviation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Songs */
+  .songs {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #5D3FD3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
+
+/* Main Hero Section */
+#hero {
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: gradient 5s  infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+.st-button {
+    background-color: #7F00FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.st-button:hover {
+    background-color: #BF40BF;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
+/* Emojis Section */
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.emoji {
+    background-color: #673147;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.media{
+    width: 259px;
+}
+
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
+/* Abbreviations Section */
+#abbreviations .abbreviation-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#abbreviations .abbreviation {
+    background: #DA70D6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align:center;
+}
+
+.abbreviation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Songs */
+  .songs {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #5D3FD3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #BF40BF, #DA70D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header ul {list-style: none; display: flex;}
+header ul li {margin: 0 20px;}
+header ul li a {color:#fff; font-size: 1rem; text-decoration: none;}
+header ul li a:hover {text-decoration: underline;}
+
+/* Main Hero Section */
+#hero {
+    background: linear-gradient(145deg, #800080, #301934);
+    padding: 170px 0;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: gradient 5s  infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+.st-button {
+    background-color: #7F00FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.st-button:hover {
+    background-color: #BF40BF;
+    cursor: pointer;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Slang Section */
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
+}
+#slang .text{
+    width: 500px;
+}
+.term .media {
+
+    max-width: 100%; /* Ensures the GIF scales down to fit its parent */
+    height: auto;    /* Maintains aspect ratio */
+}
+#slang {
+    text-align: left;
+}
+
+/* Emojis Section */
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.emoji {
+    background-color: #673147;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.media{
+    width: 259px;
+}
+
+/* Memes */
+
+.meme {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.meme img {
+    width: 250px;
+    border-radius: 10px;
+}
+/* Abbrevations table */
+
+#abbreviationsT table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background:#191919;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px grey;
+}
+#abbreviationsT th, td {
+    border: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+}
+#abbreviationsT th {
+    background-color:cornflowerblue;
+}
+#abbreviationsT tr:hover {
+    background-color:#323232;
+    box-shadow: inset 0 0 5px gray;
+}
+    
+/* Abbreviations Section */
+#abbreviations .abbreviation-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#abbreviations .abbreviation {
+    background: #DA70D6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align:center;
+}
+
+.abbreviation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Songs */
+  .songs {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #5D3FD3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
