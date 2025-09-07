@@ -75,7 +75,7 @@ h2 {
 .term  {
   display: flex;
   align-items:center;
-  gap: 200px;
+  gap: 400px;
 }
 #slang .img1{
     width: 300px;
@@ -135,7 +135,6 @@ h2 {
 }
 #abbreviationsT th {
     background-color: #722F37;
-    color: #111;
 }
 #abbreviationsT tr:hover {
     background-color: #323232;
@@ -159,8 +158,8 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-.abbreviation:hover {
-    box-shadow: inset 0 0 5px gray;
+#abbreviations .abbreviation:hover {
+    box-shadow: inset 0 0 5px #722F37;
 }
 
 /* Footer */
@@ -185,6 +184,7 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
 
 
 
