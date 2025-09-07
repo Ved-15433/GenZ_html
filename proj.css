@@ -72,7 +72,7 @@ h2 {
 }
 
 /* Slang Section */
-  .term  {
+.term  {
   display: flex;
   align-items:center;
   gap: 200px;
@@ -185,6 +185,7 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
 
 
 
