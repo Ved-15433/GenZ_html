@@ -162,8 +162,6 @@ h2 {
 .abbreviation:hover {
     box-shadow: inset 0 0 5px gray;
 }
-/* Songs */
-
 
 /* Footer */
 footer {
@@ -187,6 +185,7 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
 
 
 
