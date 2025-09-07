@@ -75,7 +75,7 @@ h2 {
 .term  {
   display: flex;
   align-items:center;
-  gap: 300px;
+  gap: 180px;
 }
 #slang .img1{
     width: 300px;
@@ -185,6 +185,7 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
 
 
 
