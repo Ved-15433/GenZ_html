@@ -131,7 +131,8 @@ h2 {
     text-align: center;
 }
 #abbreviationsT th {
-    background-color: cornflowerblue;
+    background-color: #CCCCFF;
+    color: #fff;
 }
 #abbreviationsT tr:hover {
     background-color: #323232;
@@ -181,4 +182,5 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
 
