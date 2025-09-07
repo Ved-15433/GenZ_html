@@ -72,12 +72,17 @@ h2 {
 }
 
 /* Slang Section */
-.term {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+  .term  {
+  display: flex;
+  align-items:center;
+  gap: 200px;
 }
-#slang {
+#slang .img1{
+    width: 300px;
+    height: auto;
+}
+#slang .text{
+    width: 500px;
     text-align: left;
 }
 
@@ -176,3 +181,4 @@ footer .social-media a:hover {
     height: 200px;
     border-radius: 15%;
 }
+
